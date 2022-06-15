@@ -21,7 +21,7 @@ export default class ReviewsDAO {
                 name: user.name,
                 user_id: user._id,
                 date: date,
-                rext: review,
+                text: review,
                 restaurant_id: ObjectId(restaurantId),
             }
             return await reviews.insertOne(reviewDoc)
